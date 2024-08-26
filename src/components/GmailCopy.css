@@ -1,0 +1,30 @@
+/* GmailCopy.css */
+.gmail-copy {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    /* Make the text bold */
+    color: #ec6e59;
+    /* Change the color to match your theme */
+    font-size: 1.2rem;
+    /* Adjust the font size */
+    padding: 5px;
+    /* Add some padding */
+    border: 1px solid #ec6e59;
+    /* Optional border */
+    border-radius: 4px;
+    /* Rounded corners */
+    transition: background-color 0.3s;
+    /* Smooth background transition */
+}
+
+.gmail-copy:hover {
+    background-color: rgba(236, 110, 89, 0.1);
+    /* Light background on hover */
+}
+
+.email-icon {
+    margin-right: 8px;
+    /* Space between the icon and the text */
+}
