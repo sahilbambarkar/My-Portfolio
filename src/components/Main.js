@@ -31,6 +31,7 @@ function Main() {
                                 src={myImage1}
                                 alt="main"
                                 height={600} width={600}
+                                className="w-full h-auto max-w-[600px] rounded-lg"
                              
                             />
                         </div>
