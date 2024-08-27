@@ -4,27 +4,41 @@
     align-items: center;
     cursor: pointer;
     font-weight: bold;
-    /* Make the text bold */
     color: #ec6e59;
-    /* Change the color to match your theme */
     font-size: 1.2rem;
-    /* Adjust the font size */
     padding: 5px;
-    /* Add some padding */
-    border: 1px solid #ec6e59;
-    /* Optional border */
-    border-radius: 4px;
-    /* Rounded corners */
+    margin-left: -5px;
+    /* Adjust this value to move it slightly to the left */
     transition: background-color 0.3s;
-    /* Smooth background transition */
 }
 
 .gmail-copy:hover {
     background-color: rgba(236, 110, 89, 0.1);
-    /* Light background on hover */
 }
 
 .email-icon {
     margin-right: 8px;
-    /* Space between the icon and the text */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .gmail-copy {
+        font-size: 1rem;
+        padding: 8px;
+        margin-left: -4px;
+        /* Adjust for smaller screens if needed */
+    }
+}
+
+@media (max-width: 480px) {
+    .gmail-copy {
+        font-size: 0.9rem;
+        padding: 6px;
+        margin-left: -3px;
+        /* Further adjustment for extra small screens */
+    }
+
+    .email-icon {
+        margin-right: 6px;
+    }
 }
