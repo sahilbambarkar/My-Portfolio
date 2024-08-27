@@ -4,7 +4,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import './GmailCopy.css'; // Create this CSS file for styles
 
 const GmailCopy = () => {
-  const gmailAddress = 'sahilbamarkar007@gmail.com';
+  const gmailAddress = 'sahilbambarkar007@gmail.com';
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(gmailAddress)
