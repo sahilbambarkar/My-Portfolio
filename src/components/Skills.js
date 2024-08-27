@@ -6,7 +6,7 @@ function Skills() {
             <section id="skills" style={styles.skillsSection}>
                 <h2 style={styles.sectionTitle}>Skills</h2>
 
-                <div style={styles.topGridContainer}>
+                <div style={styles.gridContainer}>
                     {/* Frontend Skills */}
                     <div style={styles.gridColumn}>
                         <h3 style={styles.skillsTitle}>Frontend</h3>
@@ -68,7 +68,7 @@ function Skills() {
                 </div>
 
                 {/* Additional Sections (Languages and Tools) */}
-                <div style={styles.bottomGridContainer}>
+                <div style={styles.gridContainer}>
                     {/* Languages */}
                     <div style={styles.gridColumn}>
                         <h3 style={styles.skillsTitle}>Languages</h3>
@@ -136,23 +136,20 @@ const styles = {
         fontSize: '2.5rem',
         marginBottom: '20px',
     },
-    topGridContainer: {
+    gridContainer: {
         display: 'flex',
-        justifyContent: 'space-between',
-        marginBottom: '40px',
-    },
-    bottomGridContainer: {
-        display: 'flex',
+        flexWrap: 'wrap', // Allows wrapping on smaller screens
         justifyContent: 'space-between',
         marginBottom: '40px',
     },
     gridColumn: {
         flex: '1',
-        margin: '0 10px',
-        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', 
+        minWidth: '250px', // Ensures a minimum width for each grid column
+        margin: '10px',
+        padding: '10px',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
         borderRadius: '8px',
         backgroundColor: '#2b2e33',
-        padding: '10px', // Padding around the grid
     },
     skillsTitle: {
         fontSize: '1.5rem',
@@ -160,7 +157,7 @@ const styles = {
     },
     grid: {
         display: 'grid',
-        gridTemplateColumns: 'repeat(4, 1fr)', // Set to 4 items per row
+        gridTemplateColumns: 'repeat(auto-fill, minmax(120px, 1fr))', // Auto-adjust columns based on content size
         gap: '10px',
     },
     gridItem: {
@@ -169,9 +166,32 @@ const styles = {
         borderRadius: '8px',
         textAlign: 'center',
         border: '1px solid #ec6e59',
-        transition: 'background-color 0.3s', 
+        transition: 'background-color 0.3s',
         cursor: 'pointer', // Change cursor to pointer
-        boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)', 
+        boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        minHeight: '50px', // Ensures a consistent height for each item
+    },
+    '@media (max-width: 768px)': {
+        grid: {
+            gridTemplateColumns: 'repeat(2, 1fr)', // 2 items per row on tablets
+        },
+    },
+    '@media (max-width: 480px)': {
+        grid: {
+            gridTemplateColumns: 'repeat(1, 1fr)', // 1 item per row on mobile
+        },
+        sectionTitle: {
+            fontSize: '1.8rem',
+        },
+        skillsTitle: {
+            fontSize: '1.2rem',
+        },
+        gridItem: {
+            minHeight: '50px', // Adjust height for mobile
+        },
     },
 };
 
