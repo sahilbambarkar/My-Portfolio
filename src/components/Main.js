@@ -21,7 +21,7 @@ function Main() {
                         <Typewriter />
                     </div>
                     <p className="dark:text-[#ccc] text-justify leading-loose pt-5 font-[400] mt-[-.8rem] text-custom-18 sm:text-[1rem] w-[90%] md:w-[95%] tm:w-full sm:w-full sm:mt-0">
-                        As an ambitious Full-Stack Developer with a strong interest in multimedia design, I bring new ideas and a creative mindset to the table. Despite being new to the sector, I have earned great experience in website and app development, where I mix technical expertise with creative design talents to create amazing digital experiences. I thrive at graphic design, producing visually appealing and engaging multimedia content that increases user interaction and enjoyment.
+                        As an ambitious Full-Stack Developer with a strong interest in multimedia design, I bring new ideas and a creative mindset to the table. Despite being new to the sector, I have earned great experience in website and app development, where I mix technical expertise with creative design talents to create amazing digital experiences. I thrive at graphic design, producing visually appealing and engaging multimedia content that increases user interaction.
                     </p>
                 </div>
                 <div className="flex py-[10px] tm:mt-[40px] items-start mt-[-30px] tm:pr-0 sm:pr-0 sm:justify-between sm:flex-col">
