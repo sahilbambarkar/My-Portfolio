@@ -7,6 +7,7 @@ import Jokes from './../assets/portfolioImages/Jokes.png';
 import image from './../assets/portfolioImages/image.png';
 import Coffee from './../assets/portfolioImages/Coffee.jpg';
 import Logo from './../assets/portfolioImages/Logo.png';
+import tripwise from './../assets/portfolioImages/Landing.png';
 
 
 
@@ -21,6 +22,16 @@ const ProjectsData = [
     source: "https://drive.google.com/drive/u/0/folders/12oWvsRhmZ3ld3sQ_N10nytwlaDQFM0Zp",
     description:
       " Complete EV charging station finder and booking app using React Native, Expo, Google Maps API, Places API, and Firebase! In this comprehensive tutorial, you'll go from zero to hero, building a powerful and user-friendly app that helps EV drivers locate charging stations near them. and also book a slot .Inaddition we have provide different types of EV accessories.Hosting will be done soon",
+  },
+  {
+    id: "AI Trip Planner",
+    img: tripwise,
+    name: "AI Trip Planner",
+    stack: ["< Gemini API />", "< FireBase />", "< React.js />", "<vite>"],
+    live: "https://tripwise-ai-trip-planner.vercel.app/",
+    source: "https://github.com/sahilbambarkar/Tripwise-AI-Trip-Planner-",
+    description:
+      "Tripwise is a cutting-edge trip planning application that leverages the power of AI to create personalized travel itineraries. Built with React, Gemini AI, Firebase, and TailwindCSS, this full-stack app offers a seamless and intelligent way to plan your next adventure. 🚀 ",
   },
   {
     id: "AI Content Generator",
