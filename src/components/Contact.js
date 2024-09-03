@@ -5,20 +5,27 @@ import GmailCopy from './GmailCopy';
 function Contact() {
   const form = useRef();
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.send('service_8jt7o5d', 'template_kdtyrag', {
-      user_name: e.target.user_name.value,
-      user_email: e.target.user_email.value,
-      message: e.target.message.value,
-      to_email: 'sahilbambarkar007@gmail.com' // Set the recipient's email address
-    }, 'vJX_4Gj5yD05jWvCS')
+    emailjs.send(
+      'service_giin8lt', // Your EmailJS service ID
+      'template_iaq8vse', // Your EmailJS template ID
+      {
+        user_name: e.target.user_name.value,
+        user_email: e.target.user_email.value,
+        message: e.target.message.value,
+        to_email: 'sahilbambarkar007@gmail.com' // Set the recipient's email address
+      },
+      'bL6mQX1bfvBTVMYVV' // Your EmailJS user ID
+    )
       .then((result) => {
         console.log(result.text);
         console.log("Message Sent");
         setShowSuccessMessage(true); // Show success message
+        setErrorMessage(''); // Clear any previous error message
 
         // Reset the form after a short delay
         setTimeout(() => {
@@ -27,6 +34,7 @@ function Contact() {
         }, 2000); // Change the delay (in milliseconds) as needed
       }, (error) => {
         console.log(error.text);
+        setErrorMessage('Failed to send message. Please try again.'); // Set error message
       });
   };
 
@@ -36,7 +44,7 @@ function Contact() {
         <h1 className='tracking-wider font-[600] text-[1.4rem] lg:text-[2rem] md:text-[2rem] tm:text-[2.5rem] sm:text-[1rem] sm:w-[100%]'>
           Contact Me
         </h1>
-        <p className='cursor-pointer'>You can contact me at<GmailCopy /></p>
+        <p className='cursor-pointer'>You can contact me at <GmailCopy /></p>
       </div>
       <div className='flex justify-center'>
         {showSuccessMessage ? (
@@ -64,7 +72,6 @@ function Contact() {
             <textarea
               className='p-4 resize-none rounded-[4px] input bg-[#e4e1e1fa] dark:bg-[#343541] h-[198px]'
               placeholder='Your message'
-              type='text'
               name="message"
               required />
 
@@ -72,6 +79,10 @@ function Contact() {
               <button type='submit'
                 className='px-[1.6em] py-[.8em] bg-[#ec6e59] cursor-pointer rounded-[4px] flex justify-start items-center gap-1 border-[#ec6e59] border-2 lg:text-[.8rem] sm:text-[.8rem]'>Send</button>
             </div>
+
+            {errorMessage && (
+              <div className='text-red-500'>{errorMessage}</div> // Display error message if any
+            )}
           </form>
         )}
       </div>
