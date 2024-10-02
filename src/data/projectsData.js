@@ -92,7 +92,7 @@ const ProjectsData = [
     img: Jokes,
     name: "Random Jokes generator",
     stack: ["< React JS />  ", "< Jokes api />"],
-    live: "random-jokes--three.vercel.app/",
+    live: "https://random-jokes--three.vercel.app/",
     source: "https://github.com/sahilbambarkar/Random_Jokes_website",
     description:
       "This Lame joke generator is a ReactJS project which uses API integration and generates a random joke.",
