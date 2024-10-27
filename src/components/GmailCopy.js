@@ -1,7 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import './GmailCopy.css'; // Ensure this CSS file exists
 
 const GmailCopy = () => {
   const gmailAddress = 'sahilbambarkar007@gmail.com';
@@ -35,8 +34,11 @@ const GmailCopy = () => {
   };
 
   return (
-    <div className="gmail-copy" onClick={copyToClipboard}>
-      <FontAwesomeIcon icon={faEnvelope} className="email-icon" />
+    <div 
+      className="flex items-center cursor-pointer font-bold text-red-600 text-lg p-2 transition duration-300 ease-in-out hover:bg-red-100"
+      onClick={copyToClipboard}
+    >
+      <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
       <span className="email-text">{gmailAddress}</span>
     </div>
   );
