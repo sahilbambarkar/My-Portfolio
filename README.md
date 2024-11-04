@@ -24,8 +24,8 @@ To run the portfolio project locally, follow these steps:
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/mediamojo.git
-   cd mediamojo
+   git clone https://github.com/sahilbambarkar/My-Portfolio.git
+   cd My-Portfolio
    ```
 
 2. Install the required dependencies:
