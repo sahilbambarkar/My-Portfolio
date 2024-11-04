@@ -8,6 +8,7 @@ import image from './../assets/portfolioImages/image.png';
 import Coffee from './../assets/portfolioImages/Coffee.jpg';
 import Logo from './../assets/portfolioImages/Logo.png';
 import tripwise from './../assets/portfolioImages/Landing.png';
+import social from './../assets/portfolioImages/Social.jpeg';
 
 
 
@@ -52,6 +53,16 @@ const ProjectsData = [
     source: "https://github.com/sahilbambarkar/Resume-maker",
     description:
       "Resume maker is made using React, ChakraUI, React Router, and Bootstrap. With our website's dark mode function, customers can simply build professional and personalized resumes. ",
+  },
+  {
+    id: "Social Media site ",
+    img: social,
+    name: "Social Media site",
+    stack: [ "< FireBase />", "< React.js />", "<vite>"],
+    live: "https://prodigy-fs-05.vercel.app/",
+    source: "https://github.com/sahilbambarkar/PRODIGY_FS_05",
+    description:
+      "MediaMojo is a fully responsive social media platform where users can connect, share, and interact through posts. With modern features like likes, shares, comments, notifications, privacy settings, and much more, MediaMojo brings together an engaging community experience. Built with Firebase and React using Vite for the frontend, along with TailwindCSS for sleek styling.",
   },
 
   {
@@ -104,7 +115,7 @@ const ProjectsData = [
     name: "Image finder website",
     stack: ["< React.js />   ", "< Pixabay API />"],
     live: "https://image-finder-mauve.vercel.app/",
-    source: "",
+    source: "https://github.com/sahilbambarkar/Image_finder",
     description:
       "A single page web application that uses the PixaBay API to display the images according to user search. ",
   },
