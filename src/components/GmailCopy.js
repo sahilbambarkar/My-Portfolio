@@ -17,7 +17,7 @@ const GmailCopy = () => {
 
   return (
     <div
-      className="flex items-center cursor-pointer font-bold text-[#ec6e59] text-lg p-2 border border-[#ec6e59] rounded transition duration-300 hover:bg-[#ec6e59]/10"
+      className="flex items-center cursor-pointer font-bold text-[#ec6e59] text-lg p-2 rounded transition duration-300 hover:bg-[#ec6e59]/10"
       onClick={copyToClipboard}
     >
       <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
