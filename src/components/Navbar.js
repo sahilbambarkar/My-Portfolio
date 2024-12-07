@@ -31,8 +31,8 @@ function Navbar() {
 
     const downloadResume = () => {
         const link = document.createElement('a');
-        link.href = '/Sahil_Resume.pdf'; 
-        link.download = 'Resume_Sahil_Bamarkar.pdf'; 
+        link.href = '/Sahil__Resume.pdf'; 
+        link.download = 'Sahil_Bamarkar_Resume.pdf'; 
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -41,7 +41,7 @@ function Navbar() {
     return (
         <>
             <div className="flex justify-between items-center py-[2rem] px-[3.5rem] sm:px-[1.5rem] relative">
-                <img src="/logo..png" alt="Logo" height={100} width={100} />
+                <img src="/logo.jpg" alt="Logo" height={80} width={80} />
                 <div className="flex-grow flex justify-center">
                     <ul className="hidden tm:block sm:block md:flex font-[400] text-black dark:text-white dark:font-[300] text-custom-20 gap-[5rem] md:gap-[3rem] lg:gap-4rem">
                         <a
