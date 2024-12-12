@@ -41,7 +41,7 @@ function Navbar() {
     return (
         <>
             <div className="flex justify-between items-center py-[2rem] px-[3.5rem] sm:px-[1.5rem] relative">
-                <img src="/logo.jpg" alt="Logo" height={90} width={90} />
+                <img src="/logo.jpg" alt="Logo" height={75} width={75} />
                 <div className="flex-grow flex justify-center">
                     <ul className="hidden tm:block sm:block md:flex font-[400] text-black dark:text-white dark:font-[300] text-custom-20 gap-[5rem] md:gap-[3rem] lg:gap-4rem">
                         <a
