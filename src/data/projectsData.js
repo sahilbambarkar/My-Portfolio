@@ -88,16 +88,7 @@ const ProjectsData = [
       "BIZSCAPE is a comprehensive business listing platform that allows users to search for and discover businesses across the world, including bars, cafes, restaurants, and more. Built using TypeScript, Tailwind CSS, and Next.js, it leverages the Google Maps API to provide a seamless and intuitive user experience.",
   },
 
-  {
-    id: "Logo whiz",
-    img: Logo,
-    name: "Logo maker",
-    stack: ["< React JS />  ", "< Vite />","</Tailwind css>"],
-    live: "https://drive.google.com/file/d/1y-fYJSYGTjAWuJHLdBPAIr4pM1dIdMsU/view",
-    source: "https://github.com/sahilbambarkar/Logo-Whizz",
-    description:
-      "The Logo Maker is a simple online application developed using React, Tailwind CSS, JavaScript, and Vite that allows users to modify and download different sorts of logo's. ",
-  },
+  
   {
     id: "Jokes Generator",
     img: Jokes,
@@ -119,7 +110,16 @@ const ProjectsData = [
     description:
       "A single page web application that uses the PixaBay API to display the images according to user search. ",
   },
-
+{
+    id: "Logo whiz",
+    img: Logo,
+    name: "Logo maker",
+    stack: ["< React JS />  ", "< Vite />","</Tailwind css>"],
+    live: "https://drive.google.com/file/d/1y-fYJSYGTjAWuJHLdBPAIr4pM1dIdMsU/view",
+    source: "https://github.com/sahilbambarkar/Logo-Whizz",
+    description:
+      "The Logo Maker is a simple online application developed using React, Tailwind CSS, JavaScript, and Vite that allows users to modify and download different sorts of logo's. ",
+  },
 ];
 
 const InprogressProjectsData = [
