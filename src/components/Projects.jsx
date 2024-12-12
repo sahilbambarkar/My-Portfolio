@@ -1,23 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Project from './Project';
-import data from './../data/projectsData.js';
+import data from './../data/projectsData.js'; // Ensure this path is correct
 
 function Projects() {
-  return (
-    <div id='projects' className='sm:pl-[10rem] sm:p-8 p-16 mt-4 sm:mt-0 sm:px-4 sm:py-2'>
-        <div>
-            <h1 className='w-72 mb-4 tracking-wider font-semibold text-3xl sm:text-2xl md:text-2xl lg:text-2.5xl sm:mb-4 sm:w-full '>Few Projects</h1>
-        </div>
+  const [visibleCount, setVisibleCount] = useState(6); // Initially show 6 projects
 
-        {data.ProjectsData.map((project) => {
-            return(<Project key={project.id}
-                image={project.img}
-                name={project.name}
-                live={project.live}
-                source={project.source}
-                desc={project.description}/>)
-        })}
-       
+  const handleShowMore = () => {
+    setVisibleCount(prevCount => prevCount + 3); // Show 3 more projects on button click
+  };
+
+  return (
+    <div id='projects' className='p-8 mt-4'>
+      <h1 className='mb-4 tracking-wider font-semibold text-3xl'>Few Projects</h1>
+
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
+        {data.ProjectsData.slice(0, visibleCount).map((project) => (
+          <Project
+            key={project.id}
+            image={project.img}
+            name={project.name}
+            live={project.live}
+            source={project.source}
+            desc={project.description}
+          />
+        ))}
+      </div>
+
+      {/* Centered View More Button */}
+      <div className='flex justify-center mt-6'>
+        {visibleCount < data.ProjectsData.length && (
+          <button
+            onClick={handleShowMore}
+            className='bg-[#ec6e59] text-white px-4 py-2 rounded-md hover:bg-[#d95e51]'
+          >
+            View More
+          </button>
+        )}
+      </div>
     </div>
   );
 }
