@@ -38,10 +38,10 @@ function Main() {
                 <div className="flex place-content-center mt-7 sm:mt-0 sm:ml-5">
                     <div className="flex flex-row sm:flex-col gap-5">
                         <a rel="noreferrer" href="https://github.com/sahilbambarkar" target="_blank">
-                            <AiFillGithub size={40} className="cursor-pointer" />
+                            <AiFillGithub size={50} className="cursor-pointer" />
                         </a>
                         <a rel="noreferrer" href="https://www.linkedin.com/in/sahil-bambarkar-7082632b2" target="_blank">
-                            <AiFillLinkedin size={40} className="cursor-pointer" />
+                            <AiFillLinkedin size={50} className="cursor-pointer" />
                         </a>
                     </div>
                 </div>
