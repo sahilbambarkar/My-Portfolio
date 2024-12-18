@@ -24,17 +24,17 @@ function Contact() {
       .then((result) => {
         console.log(result.text);
         console.log("Message Sent");
-        setShowSuccessMessage(true); // Show success message
-        setErrorMessage(''); // Clear any previous error message
+        setShowSuccessMessage(true); 
+        setErrorMessage(''); 
 
-        // Reset the form after a short delay
+        
         setTimeout(() => {
           e.target.reset();
-          setShowSuccessMessage(false); // Hide the success message
-        }, 2000); // Change the delay (in milliseconds) as needed
+          setShowSuccessMessage(false); 
+        }, 2000); 
       }, (error) => {
         console.log(error.text);
-        setErrorMessage('Failed to send message. Please try again.'); // Set error message
+        setErrorMessage('Failed to send message. Please try again.'); 
       });
   };
 
@@ -55,14 +55,14 @@ function Contact() {
         ) : (
           <form className='flex flex-col gap-4 tm:w-full sm:w-full lg:w-[88%]' ref={form} onSubmit={sendEmail}>
             <label>Name</label>
-            <input className='p-4 rounded-[4px] bg-[#e4e1e1fa] dark:bg-gray-700 h-[58px]'
+            <input className='p-4 rounded-[4px] bg-[#e4e1e1fa] bg-gray-700 h-[58px]'
               placeholder='Name'
               type="text"
               name="user_name"
               required />
 
             <label>Email</label>
-            <input className='p-4 rounded-[4px] bg-[#e4e1e1fa] dark:bg-gray-700 h-[58px]'
+            <input className='p-4 rounded-[4px] bg-[#e4e1e1fa] bg-gray-700 h-[58px]'
               placeholder='Email'
               type="email"
               name="user_email"
@@ -70,7 +70,7 @@ function Contact() {
 
             <label>Your Message</label>
             <textarea
-              className='p-4 resize-none rounded-[4px] input bg-[#e4e1e1fa] dark:bg-gray-700 h-[198px]'
+              className='p-4 resize-none rounded-[4px] input bg-[#e4e1e1fa] bg-gray-700 h-[198px]'
               placeholder='Your message'
               name="message"
               required />
