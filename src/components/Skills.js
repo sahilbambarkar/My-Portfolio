@@ -8,7 +8,7 @@ import { BiLogoVisualStudio } from "react-icons/bi";
 
 function Skills() {
     return (
-        <div className="p-8 bg-gray-900 text-white font-sans">
+        <div className="p-8  text-white font-sans">
             <section id="skills">
                 <h2 className="text-4xl font-bold mb-6">Skills</h2>
 
