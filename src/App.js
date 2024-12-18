@@ -11,7 +11,7 @@ function App() {
 
   return (
     <BackgroundView>
-      <div className='font-poppins select-none text-black bg-white dark:bg- gray-900  dark:text-white  transition duration-500'>
+      <div className='font-poppins select-none text-black bg-white dark:bg-gray-900  dark:text-white  transition duration-500'>
         <Navbar />
         <Main />
         <Skills/>
