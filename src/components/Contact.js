@@ -55,14 +55,14 @@ function Contact() {
         ) : (
           <form className='flex flex-col gap-4 tm:w-full sm:w-full lg:w-[88%]' ref={form} onSubmit={sendEmail}>
             <label>Name</label>
-            <input className='p-4 rounded-[4px] bg-[#e4e1e1fa] dark:bg-[#3d3e4b] h-[58px]'
+            <input className='p-4 rounded-[4px] bg-[#e4e1e1fa] dark:bg-gray-700 h-[58px]'
               placeholder='Name'
               type="text"
               name="user_name"
               required />
 
             <label>Email</label>
-            <input className='p-4 rounded-[4px] bg-[#e4e1e1fa] dark:bg-[#3d3e4b] h-[58px]'
+            <input className='p-4 rounded-[4px] bg-[#e4e1e1fa] dark:bg-gray-700 h-[58px]'
               placeholder='Email'
               type="email"
               name="user_email"
@@ -70,18 +70,18 @@ function Contact() {
 
             <label>Your Message</label>
             <textarea
-              className='p-4 resize-none rounded-[4px] input bg-[#e4e1e1fa] dark:bg-[#343541] h-[198px]'
+              className='p-4 resize-none rounded-[4px] input bg-[#e4e1e1fa] dark:bg-gray-700 h-[198px]'
               placeholder='Your message'
               name="message"
               required />
 
             <div className='flex justify-start mt-5 mb-8'>
               <button type='submit'
-                className='px-[1.6em] py-[.8em] bg-[#ec6e59] cursor-pointer rounded-[4px] flex justify-start items-center gap-1 border-[#ec6e59] border-2 lg:text-[.8rem] sm:text-[.8rem]'>Send</button>
+                className='px-[1.6em] py-[.8em] bg-[#ec6e59] cursor-pointer rounded-[4px] flex justify-start items-center gap-1 border-[#ec6e59] border-2 lg:text-[.8rem] sm:text-[.8rem] transition-scale hover:scale-105'>Send</button>
             </div>
 
             {errorMessage && (
-              <div className='text-red-500'>{errorMessage}</div> // Display error message if any
+              <div className='text-red-500'>{errorMessage}</div> 
             )}
           </form>
         )}
