@@ -92,7 +92,8 @@ body {
 }
 
 html {
-  background-color: #20262E;
+  background-color: #111827;
+  scroll-behavior: smooth;
 }
 
 .experience {
