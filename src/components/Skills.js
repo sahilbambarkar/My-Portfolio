@@ -1,118 +1,73 @@
-import React from 'react';
+import React from "react";
+import { FaHtml5, FaCss3Alt, FaReact, FaAngular, FaBootstrap, FaNode, FaPython, FaJava, FaGithub } from "react-icons/fa";
+import { SiJavascript, SiExpress, SiPostgresql, SiTypescript, SiTailwindcss, SiCanva, SiAdobephotoshop, SiFirebase } from "react-icons/si";
+import { TbBrandReactNative, TbBrandCSharp } from "react-icons/tb";
+import { DiMaterializecss, DiMongodb, DiNetbeans, DiVisualstudio } from "react-icons/di";
+import { GrMysql } from "react-icons/gr";
+import { BiLogoVisualStudio } from "react-icons/bi";
 
 function Skills() {
     return (
-        <div style={styles.container}>
-            <section id="skills" style={styles.skillsSection}>
-                <h2 style={styles.sectionTitle}>Skills</h2>
+        <div className="p-8 bg-gray-900 text-white font-sans">
+            <section id="skills">
+                <h2 className="text-4xl font-bold mb-6">Skills</h2>
 
-                <div style={styles.gridContainer}>
+                {/* Top Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                     {/* Frontend Skills */}
-                    <div style={styles.gridColumn}>
-                        <h3 style={styles.skillsTitle}>Frontend</h3>
-                        <div style={styles.grid}>
-                            <div style={styles.gridItem}>
-                                <p>HTML</p>
-                            </div>
-                            <div style={styles.gridItem}>
-                                <p>CSS</p>
-                            </div>
-                            <div style={styles.gridItem}>
-                                <p>JavaScript</p>
-                            </div>
-                            <div style={styles.gridItem}>
-                                <p>React</p>
-                            </div>
-                            <div style={styles.gridItem}>
-                                <p>Angular</p>
-                            </div>
-                            <div style={styles.gridItem}>
-                                <p>Tailwind CSS</p>
-                            </div>
-                            <div style={styles.gridItem}>
-                                <p>Shadcn UI</p>
-                            </div>
-                            <div style={styles.gridItem}>
-                                <p>Material UI</p>
-                            </div>
-                            <div style={styles.gridItem}>
-                                <p>Bootstrap</p>
-                            </div>
+                    <div className="p-4 bg-gray-800 rounded-lg shadow-md">
+                        <h3 className="text-2xl font-semibold mb-4">Frontend</h3>
+                        <div className="grid grid-cols-3 gap-4 text-center">
+                            <Skill icon={<FaHtml5 size={30} />} name="HTML" />
+                            <Skill icon={<FaCss3Alt size={30} />} name="CSS" />
+                            <Skill icon={<SiJavascript size={30} />} name="JavaScript" />
+                            <Skill icon={<FaReact size={30} />} name="React" />
+                            <Skill icon={<TbBrandReactNative size={30} />} name="React Native" />
+                            <Skill icon={<FaAngular size={30} />} name="Angular" />
+                            <Skill icon={<SiTailwindcss size={30} />} name="Tailwind CSS" />
+                            <Skill icon={<DiMaterializecss size={30} />} name="ShadcnUi" />
+                            <Skill icon={<FaBootstrap size={30} />} name="Bootstrap" />
                         </div>
                     </div>
 
                     {/* Backend Skills */}
-                    <div style={styles.gridColumn}>
-                        <h3 style={styles.skillsTitle}>Backend</h3>
-                        <div style={styles.grid}>
-                            <div style={styles.gridItem}>
-                                <p>Node.js</p>
-                            </div>
-                            <div style={styles.gridItem}>
-                                <p>Express.js</p>
-                            </div>
-                            <div style={styles.gridItem}>
-                                <p>MySQL</p>
-                            </div>
-                            <div style={styles.gridItem}>
-                                <p>MongoDB</p>
-                            </div>
-                            <div style={styles.gridItem}>
-                                <p>Firebase</p>
-                            </div>
-                            <div style={styles.gridItem}>
-                                <p>PostgreSQL</p>
-                            </div>
+                    <div className="p-4 bg-gray-800 rounded-lg shadow-md">
+                        <h3 className="text-2xl font-semibold mb-4">Backend</h3>
+                        <div className="grid grid-cols-3 gap-4 text-center">
+                            <Skill icon={<FaNode size={30} />} name="Node.js" />
+                            <Skill icon={<SiExpress size={30} />} name="Express.js" />
+                            <Skill icon={<GrMysql size={30} />} name="MySQL" />
+                            <Skill icon={<DiMongodb size={30} />} name="MongoDB" />
+                            <Skill icon={<SiFirebase size={30} />} name="Firebase" />
+                            <Skill icon={<SiPostgresql size={30} />} name="PostgreSQL" />
                         </div>
                     </div>
                 </div>
 
-                {/* Additional Sections (Languages and Tools) */}
-                <div style={styles.gridContainer}>
+                {/* Bottom Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Languages */}
-                    <div style={styles.gridColumn}>
-                        <h3 style={styles.skillsTitle}>Languages</h3>
-                        <div style={styles.grid}>
-                            <div style={styles.gridItem}>
-                                <p>Python</p>
-                            </div>
-                            <div style={styles.gridItem}>
-                                <p>Java</p>
-                            </div>
-                            <div style={styles.gridItem}>
-                                <p>TypeScript</p>
-                            </div>
-                            <div style={styles.gridItem}>
-                                <p>JavaScript</p>
-                            </div>
-                            <div style={styles.gridItem}>
-                                <p>C#</p>
-                            </div>
+                    <div className="p-4 bg-gray-800 rounded-lg shadow-md">
+                        <h3 className="text-2xl font-semibold mb-4">Languages</h3>
+                        <div className="grid grid-cols-3 gap-4 text-center">
+                            <Skill icon={<FaPython size={30} />} name="Python" />
+                            <Skill icon={<FaJava size={30} />} name="Java" />
+                            <Skill icon={<SiTypescript size={30} />} name="TypeScript" />
+                            <Skill icon={<SiJavascript size={30} />} name="JavaScript" />
+                            <Skill icon={<TbBrandCSharp size={30} />} name="C#" />
                         </div>
                     </div>
 
                     {/* Tools */}
-                    <div style={styles.gridColumn}>
-                        <h3 style={styles.skillsTitle}>Tools</h3>
-                        <div style={styles.grid}>
-                            <div style={styles.gridItem}>
-                                <p>VSCode</p>
-                            </div>
-                            <div style={styles.gridItem}>
-                                <p>Github</p>
-                            </div>
-                            <div style={styles.gridItem}>
-                                <p>NetBeans</p>
-                            </div>
-                            <div style={styles.gridItem}>
-                                <p>Photoshop</p>
-                            </div>
-                            <div style={styles.gridItem}>
-                                <p>Canva</p>
-                            </div>
-                            <div style={styles.gridItem}>
-                                <p>Visual Studio</p>
-                            </div>
+                    <div className="p-4 bg-gray-800 rounded-lg shadow-md">
+                        <h3 className="text-2xl font-semibold mb-4">Tools</h3>
+                        <div className="grid grid-cols-3 gap-4 text-center">
+                            <Skill icon={<BiLogoVisualStudio size={30} />} name="VS Code" />
+                            <Skill icon={<FaGithub size={30} />} name="GitHub" />
+                            <Skill icon={<DiNetbeans size={30} />} name="NetBeans" />
+                            <Skill icon={<SiAdobephotoshop size={30} />} name="Photoshop" />
+                            <Skill icon={<SiCanva size={30} />} name="Canva" />
+                            <Skill icon={<DiVisualstudio size={30} />} name="Visual Studio" />
                         </div>
                     </div>
                 </div>
@@ -121,78 +76,13 @@ function Skills() {
     );
 }
 
-const styles = {
-    container: {
-        padding: '20px',
-        backgroundColor: '#20262E',
-        color: '#FFFF',
-        fontFamily: 'Arial, sans-serif',
-    },
-    skillsSection: {
-        textAlign: 'left',
-        padding: '20px',
-    },
-    sectionTitle: {
-        fontSize: '2.5rem',
-        marginBottom: '20px',
-    },
-    gridContainer: {
-        display: 'flex',
-        flexWrap: 'wrap', // Allows wrapping on smaller screens
-        justifyContent: 'space-between',
-        marginBottom: '40px',
-    },
-    gridColumn: {
-        flex: '1',
-        minWidth: '250px', // Ensures a minimum width for each grid column
-        margin: '10px',
-        padding: '10px',
-        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-        borderRadius: '8px',
-        backgroundColor: '#2b2e33',
-    },
-    skillsTitle: {
-        fontSize: '1.5rem',
-        marginBottom: '15px',
-    },
-    grid: {
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fill, minmax(120px, 1fr))', // Auto-adjust columns based on content size
-        gap: '10px',
-    },
-    gridItem: {
-        backgroundColor: '#20262E',
-        padding: '10px',
-        borderRadius: '8px',
-        textAlign: 'center',
-        border: '1px solid #ec6e59',
-        transition: 'background-color 0.3s',
-        cursor: 'pointer', // Change cursor to pointer
-        boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        minHeight: '50px', // Ensures a consistent height for each item
-    },
-    '@media (max-width: 768px)': {
-        grid: {
-            gridTemplateColumns: 'repeat(2, 1fr)', // 2 items per row on tablets
-        },
-    },
-    '@media (max-width: 480px)': {
-        grid: {
-            gridTemplateColumns: 'repeat(1, 1fr)', // 1 item per row on mobile
-        },
-        sectionTitle: {
-            fontSize: '1.8rem',
-        },
-        skillsTitle: {
-            fontSize: '1.2rem',
-        },
-        gridItem: {
-            minHeight: '50px', // Adjust height for mobile
-        },
-    },
-};
+function Skill({ icon, name }) {
+    return (
+        <div className="p-4 bg-gray-700 rounded-lg hover:bg-gray-500 transition duration-300 cursor-pointer shadow">
+            <div className="flex justify-center mb-2 text-[#ec6e59]">{icon}</div>
+            <p className="text-sm font-semibold">{name}</p>
+        </div>
+    );
+}
 
 export default Skills;
