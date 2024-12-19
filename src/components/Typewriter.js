@@ -50,4 +50,4 @@ const Typewriter = () => {
   );
 };
 
-export default Typewriter; make speed faster of that text
+export default Typewriter;
