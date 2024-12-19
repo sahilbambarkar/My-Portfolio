@@ -10,9 +10,7 @@ const Typewriter = () => {
     'Freelancer',
     'Data Analyst',
     'Template Designer'
-    'Devops Engineer'
   ];
-  
   const [currentStringIndex, setCurrentStringIndex] = useState(0);
   const [currentString, setCurrentString] = useState('');
   const [isTyping, setIsTyping] = useState(true);
@@ -45,7 +43,7 @@ const Typewriter = () => {
   }, [currentString, currentStringIndex, isTyping]);
 
   return (
-    <span className="font-medium text-[#ec6e59] text-[1.5rem] mb-2 sm:text-[2rem]">
+    <span className="font-medium text-[#ec6e59] text-[1.5rem] sm:text-[2rem]">
       {currentString}
     </span>
   );
