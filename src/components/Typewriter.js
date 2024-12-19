@@ -9,7 +9,7 @@ const Typewriter = () => {
     'Backend Developer',
     'Freelancer',
     'Data Analyst',
-    'Template Designer'
+    'Template Designer',
     'Devops Engineer'
   ];
   const [currentStringIndex, setCurrentStringIndex] = useState(0);
