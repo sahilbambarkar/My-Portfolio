@@ -21,11 +21,11 @@ const Typewriter = () => {
       if (currentString === strings[currentStringIndex]) {
         setTimeout(() => {
           setIsTyping(false);
-        }, 400); // Pause before erasing
+        }, 500); // Pause before erasing
       } else {
         const timeout = setTimeout(() => {
           setCurrentString(strings[currentStringIndex].slice(0, currentString.length + 1));
-        }, 70); // Typing speed
+        }, 100); // Typing speed
 
         return () => clearTimeout(timeout);
       }
@@ -50,4 +50,4 @@ const Typewriter = () => {
   );
 };
 
-export default Typewriter;
+export default Typewriter; make speed faster of that text
