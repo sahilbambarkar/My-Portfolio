@@ -21,11 +21,11 @@ const Typewriter = () => {
       if (currentString === strings[currentStringIndex]) {
         setTimeout(() => {
           setIsTyping(false);
-        }, 300); // Reduced pause duration before erasing
+        }, 400); // Pause before erasing
       } else {
         const timeout = setTimeout(() => {
           setCurrentString(strings[currentStringIndex].slice(0, currentString.length + 1));
-        }, 50); // Faster typing speed
+        }, 70); // Typing speed
 
         return () => clearTimeout(timeout);
       }
@@ -36,7 +36,7 @@ const Typewriter = () => {
       } else {
         const timeout = setTimeout(() => {
           setCurrentString(currentString.slice(0, currentString.length - 1));
-        }, 30); // Faster erasing speed
+        }, 50); // Erasing speed
 
         return () => clearTimeout(timeout);
       }
