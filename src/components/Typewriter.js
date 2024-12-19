@@ -10,7 +10,9 @@ const Typewriter = () => {
     'Freelancer',
     'Data Analyst',
     'Template Designer'
+    'Devops Engineer'
   ];
+  
   const [currentStringIndex, setCurrentStringIndex] = useState(0);
   const [currentString, setCurrentString] = useState('');
   const [isTyping, setIsTyping] = useState(true);
@@ -20,11 +22,11 @@ const Typewriter = () => {
       if (currentString === strings[currentStringIndex]) {
         setTimeout(() => {
           setIsTyping(false);
-        }, 500); // Pause before erasing
+        }, 300); // Adjusted pause duration before erasing (in milliseconds)
       } else {
         const timeout = setTimeout(() => {
           setCurrentString(strings[currentStringIndex].slice(0, currentString.length + 1));
-        }, 100); // Typing speed
+        }, 50); // Adjusted typing speed here (in milliseconds)
 
         return () => clearTimeout(timeout);
       }
@@ -35,7 +37,7 @@ const Typewriter = () => {
       } else {
         const timeout = setTimeout(() => {
           setCurrentString(currentString.slice(0, currentString.length - 1));
-        }, 50); // Erasing speed
+        }, 30); // Adjusted erasing speed here (in milliseconds)
 
         return () => clearTimeout(timeout);
       }
