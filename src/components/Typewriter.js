@@ -44,7 +44,7 @@ const Typewriter = () => {
   }, [currentString, currentStringIndex, isTyping]);
 
   return (
-   <span className="font-[500] dark:font-[400]  text-[#ec6e59;] text-[1.5rem] mb-2 sm:text-[2rem]">
+   <span className="font-[500]  text-[#ec6e59;] text-[1.5rem] mb-2 sm:text-[2rem]">
       {currentString}
     </span>
   );
