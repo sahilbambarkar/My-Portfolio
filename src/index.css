@@ -76,7 +76,7 @@ a:hover:after {
 
 /* background of scroller */
 ::-webkit-scrollbar-track {
-  background: #20262E;
+  background: #ec6e59;
   /* background: #206ca4; */
 }
 
@@ -110,6 +110,4 @@ body [id] {
   scroll-margin: 50px !important;
 }
 
- /* value: "#FFDE59",
- value: "#2596be",
- value: "#206ca4", */
+
