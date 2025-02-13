@@ -9,6 +9,7 @@ import Coffee from './../assets/portfolioImages/Coffee.jpg';
 import Logo from './../assets/portfolioImages/Logo.png';
 import tripwise from './../assets/portfolioImages/Landing.png';
 import social from './../assets/portfolioImages/Social.jpeg';
+import Interview from './../assets/portfolioImages/Interview.png';
 
 
 
@@ -20,7 +21,7 @@ const ProjectsData = [
     name: "EV Charging station & slot booking ",
     stack: ["< Google places  API />", "< Firebase />", "< React native/>", "<Clerk Auth>"],
     live: "https://drive.google.com/file/d/1PwQRK7GSDt_PKs5tTbKER4aTh0T7or-W/view?t=1",
-    source: "https://drive.google.com/drive/u/0/folders/12oWvsRhmZ3ld3sQ_N10nytwlaDQFM0Zp",
+    source: "https://drive.google.com/file/d/11qoq-4BYjfa_H8u8tT3PYXafQdyO9rL-/view",
     description:
       " Complete EV charging station finder and booking app using React Native, Expo, Google Maps API, Places API, and Firebase! In this comprehensive tutorial, you'll go from zero to hero, building a powerful and user-friendly app that helps EV drivers locate charging stations near them. and also book a slot .Inaddition we have provide different types of EV accessories.Hosting will be done soon",
   },
@@ -33,6 +34,16 @@ const ProjectsData = [
     source: "https://github.com/sahilbambarkar/Tripwise-AI-Trip-Planner-",
     description:
       "Tripwise is a cutting-edge trip planning application that leverages the power of AI to create personalized travel itineraries. Built with React, Gemini AI, Firebase, and TailwindCSS, this full-stack app offers a seamless and intelligent way to plan your next adventure. 🚀 ",
+  },
+  {
+    id: "AI Mock Interviewer",
+    img: Interview,
+    name: "AI Mock Interviewer",
+    stack: ["< Gemini API />", "< Postgre SQL />", "< React.js />", "<Next.js>"],
+    live: "https://interview-edge-ai.vercel.app/",
+    source: "https://github.com/sahilbambarkar/Interview-Edge-AI-Mock-Interview-Prep",
+    description:
+      "Ace your job interview with our AI-powered platform designed to provide realistic simulations, AI-generated questions, and instant feedback. Powered by Next.js, Node.js, Clerk, Drizzle ORM, and Gemini, this platform offers an effective way to practice, improve, and confidently land your dream job. It provides personalized insights and simulates real-world scenarios, ensuring you're fully prepared to impress potential employers.🚀"
   },
   {
     id: "AI Content Generator",
@@ -88,7 +99,7 @@ const ProjectsData = [
       "BIZSCAPE is a comprehensive business listing platform that allows users to search for and discover businesses across the world, including bars, cafes, restaurants, and more. Built using TypeScript, Tailwind CSS, and Next.js, it leverages the Google Maps API to provide a seamless and intuitive user experience.",
   },
 
-  
+ 
   {
     id: "Jokes Generator",
     img: Jokes,
@@ -110,16 +121,17 @@ const ProjectsData = [
     description:
       "A single page web application that uses the PixaBay API to display the images according to user search. ",
   },
-{
+  {
     id: "Logo whiz",
     img: Logo,
     name: "Logo maker",
-    stack: ["< React JS />  ", "< Vite />","</Tailwind css>"],
+    stack: ["< React JS />  ", "< Vite />", "</Tailwind css>"],
     live: "https://drive.google.com/file/d/1y-fYJSYGTjAWuJHLdBPAIr4pM1dIdMsU/view",
     source: "https://github.com/sahilbambarkar/Logo-Whizz",
     description:
       "The Logo Maker is a simple online application developed using React, Tailwind CSS, JavaScript, and Vite that allows users to modify and download different sorts of logo's. ",
   },
+
 ];
 
 const InprogressProjectsData = [
