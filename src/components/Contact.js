@@ -7,6 +7,8 @@ function Contact() {
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
 
+   const currentYear = new Date().getFullYear();
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -87,7 +89,8 @@ function Contact() {
         )}
       </div>
 
-      <div className='flex justify-center items-center font-[350] text-[0.6rem] leading-loose sm:text-[1rem] tm:text-[1rem]'> Copyright © 2024
+      <div className='flex justify-center items-center font-[350] text-[0.6rem] leading-loose sm:text-[1rem] tm:text-[1rem]'>
+        Copyright &copy; {currentYear}
         <span className='font-[500]'>&nbsp;Sahil Bambarkar&nbsp; </span>
         All Rights Reserved
       </div>
