@@ -13,7 +13,7 @@ function Contact() {
     e.preventDefault();
 
     emailjs.send(
-      'service_giin8lt', // Your EmailJS service ID
+      'service_vt1z3mr', // Your EmailJS service ID
       'template_iaq8vse', // Your EmailJS template ID
       {
         user_name: e.target.user_name.value,
