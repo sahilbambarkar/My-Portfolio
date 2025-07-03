@@ -19,7 +19,7 @@ function Contact() {
         user_name: e.target.user_name.value,
         user_email: e.target.user_email.value,
         message: e.target.message.value,
-        to_email: 'sahilbambarkar007@gmail.com' // Set the recipient's email address
+       // to_email: 'sahilbambarkar007@gmail.com' 
       },
       'cStCYDu8bkgYgdb81' // Your EmailJS user ID
     )
