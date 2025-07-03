@@ -52,7 +52,7 @@ function Contact() {
         {showSuccessMessage ? (
           <div className='flex flex-col items-center justify-center'>
             <h2 className='text-lg mb-4'>Thank you for your message!</h2>
-            <p>Your message has been sent to my email.</p>
+            <p>Your message has been sent successfully.</p>
           </div>
         ) : (
           <form className='flex flex-col gap-4 tm:w-full sm:w-full lg:w-[88%]' ref={form} onSubmit={sendEmail}>
