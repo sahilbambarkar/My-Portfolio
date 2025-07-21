@@ -8,7 +8,7 @@ import image from './../assets/portfolioImages/image.png';
 import Coffee from './../assets/portfolioImages/Coffee.jpg';
 import Logo from './../assets/portfolioImages/Logo.png';
 import tripwise from './../assets/portfolioImages/Landing.png';
-import social from './../assets/portfolioImages/Social.jpeg';
+import social from './../assets/portfolioImages/Social.jpg';
 import Interview from './../assets/portfolioImages/Interview.png';
 
 
