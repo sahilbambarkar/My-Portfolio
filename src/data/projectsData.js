@@ -69,11 +69,11 @@ const ProjectsData = [
     id: "Social Media site ",
     img: social,
     name: "Social Media site",
-    stack: [ "< FireBase />", "< React.js />", "<vite>"],
-    live: "https://prodigy-fs-05.vercel.app/",
-    source: "https://github.com/sahilbambarkar/PRODIGY_FS_05",
+    stack: [ "< Postgesql />","< Prisma />", "< React.js />", "<nextjs>"],
+    live: "https://mediamojo-social.vercel.app/",
+    source: "https://github.com/sahilbambarkar/mediamojo-social-site",
     description:
-      "MediaMojo is a fully responsive social media platform where users can connect, share, and interact through posts. With modern features like likes, shares, comments, notifications, privacy settings, and much more, MediaMojo brings together an engaging community experience. Built with Firebase and React using Vite for the frontend, along with TailwindCSS for sleek styling.",
+      "MediaMojo is a fully responsive social media platform where users can connect, share, and interact through posts. With modern features like likes, shares, comments, notifications,  and much more, MediaMojo brings together an engaging community experience. Built with Firebase and React using Vite for the frontend, along with TailwindCSS for sleek styling.",
   },
 
   {
